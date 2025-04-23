@@ -25,11 +25,15 @@ git clone <url>
 
 ### 🧱 Commit y staging
 
+
+
+## ✅ Flujo básico (recordatorio)
+
 ```bash
-git status
-git add <archivo>
-git commit -m "mensaje"
-git add .
+git status                 # Ver qué cambió
+git add archivo.md         # Añadir archivo al staging
+git commit -m "Mensaje"    # Crear commit
+git push                   # Subir a GitHub
 ```
 
 ### 🌿 Ramas
