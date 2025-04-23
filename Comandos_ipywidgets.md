@@ -3,7 +3,6 @@
 
 Este ejemplo muestra cómo crear un botón interactivo con salida dinámica usando `ipywidgets` en Jupyter Notebook.
 
-## 🧪 Código mejorado
 
 ```python
 # 📦 Importación de widgets y display
