@@ -1,3 +1,4 @@
+
 # 🧾 Comandos Git – Flujo básico y Cheat Sheet
 
 ## ✅ Flujo básico
@@ -52,11 +53,19 @@ git config --global alias.lg "log --oneline --graph --all --decorate"
 # Crea un alias 'lg' para ver el historial en una línea por commit con grafo de ramas
 ```
 
-### 🧩 Comandos útiles para agregar archivos a Git
+## 🧪 GitHub CLI (gh)
 ```bash
-git add .	                        # Agrega todos los cambios en el directorio actual y subdirectorios.
-git add -A	                      # Igual que . pero también asegura que se agreguen eliminaciones.
-git add nombre.py	                # Agrega solo el archivo nombre.py.
-git add data/	                    # Agrega solo la carpeta data/ y todo su contenido.
+gh auth login
+# Inicia sesión con GitHub desde la terminal (elige SSH si ya tienes clave configurada)
+
+gh repo create proyecto_sismos --public --source=. --remote=origin --push
+# Crea y sube un repositorio desde tu carpeta actual en un solo paso
+
+gh repo clone usuario/repositorio
+# Clona un repositorio desde GitHub usando gh
+
+gh repo view --web
+# Abre el repositorio actual en tu navegador
 ```
 
+✅ La GitHub CLI (`gh`) es ideal para automatizar flujos desde la terminal sin entrar al navegador.
