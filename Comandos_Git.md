@@ -1,4 +1,3 @@
-
 # 🧾 Comandos Git – Flujo básico y Cheat Sheet
 
 ## ✅ Flujo básico
@@ -52,3 +51,12 @@ git config --global user.email "tu@correo.com" # Define tu correo global para Gi
 git config --global alias.lg "log --oneline --graph --all --decorate"
 # Crea un alias 'lg' para ver el historial en una línea por commit con grafo de ramas
 ```
+
+### 🧩 Comandos útiles para agregar archivos a Git
+
+| Comando                | ¿Qué hace?                                                                 |
+|------------------------|----------------------------------------------------------------------------|
+| `git add .`            | Agrega todos los cambios en el directorio actual y subdirectorios.         |
+| `git add -A`           | Igual que `.` pero **también asegura que se agreguen eliminaciones**.      |
+| `git add nombre.py`    | Agrega **solo el archivo** `nombre.py`.                                    |
+| `git add data/`        | Agrega **solo la carpeta** `data/` y todo su contenido.                    |
