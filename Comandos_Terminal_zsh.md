@@ -123,3 +123,36 @@ jobs
 | `Ctrl + L`         | Limpia toda la pantalla                                   |
 | `Alt + Backspace`  | Borra una palabra hacia atrás                             |
 | `Ctrl + C`         | Cancela el comando actual                                 |
+
+
+## 📂 Comando `ls` y variantes útiles
+
+```bash
+ls                # Lista archivos y carpetas del directorio actual
+ls -l             # Lista detallada (permisos, tamaño, fecha)
+ls -a             # Muestra archivos ocultos (los que empiezan con '.')
+ls -lh            # Lista detallada con tamaños legibles (KB, MB)
+ls -lt            # Ordena por fecha (reciente primero)
+ls -ltr           # Ordena por fecha (reciente al final)
+ls -R             # Lista recursiva (incluye subdirectorios)
+ls -d */          # Muestra solo directorios
+```
+
+---
+
+## 🧪 GitHub CLI (`gh`) – Comandos explicados
+
+```bash
+gh auth login
+# Abre un flujo para iniciar sesión con tu cuenta GitHub desde la terminal
+
+gh repo create proyecto_sismos --public --source=. --remote=origin --push
+# Crea un repositorio en GitHub con nombre 'proyecto_sismos' desde tu carpeta actual
+# Lo configura como repositorio remoto 'origin' y hace el primer push
+
+gh repo clone usuario/repositorio
+# Clona un repositorio desde GitHub usando 'gh' (como 'git clone')
+
+gh repo view --web
+# Abre el repositorio actual en el navegador web predeterminado
+```
