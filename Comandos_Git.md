@@ -53,10 +53,10 @@ git config --global alias.lg "log --oneline --graph --all --decorate"
 ```
 
 ### 🧩 Comandos útiles para agregar archivos a Git
+```bash
+git add .	                        # Agrega todos los cambios en el directorio actual y subdirectorios.
+git add -A	                      # Igual que . pero también asegura que se agreguen eliminaciones.
+git add nombre.py	                # Agrega solo el archivo nombre.py.
+git add data/	                    # Agrega solo la carpeta data/ y todo su contenido.
+```
 
-| Comando                | ¿Qué hace?                                                                 |
-|------------------------|----------------------------------------------------------------------------|
-| `git add .`            | Agrega todos los cambios en el directorio actual y subdirectorios.         |
-| `git add -A`           | Igual que `.` pero **también asegura que se agreguen eliminaciones**.      |
-| `git add nombre.py`    | Agrega **solo el archivo** `nombre.py`.                                    |
-| `git add data/`        | Agrega **solo la carpeta** `data/` y todo su contenido.                    |
